@@ -1,5 +1,4 @@
 #include <stdio.h>
-// Add your system includes here.
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <unistd.h>
@@ -123,8 +122,6 @@ struct TreeNode *generate_ftree_HELPER(const char *fname, const char *path) {
  * Prints the TreeNodes encountered on a preorder traversal of an FTree.
  */
 void print_ftree(struct TreeNode *root) {
-    // Here's a trick for remembering what depth (in the tree) you're at
-    // and printing 2 * that many spaces at the beginning of the line.
     int depth = 0;
     print_ftree_HELPER(root, depth);
     
